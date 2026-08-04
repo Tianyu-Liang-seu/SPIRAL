@@ -70,7 +70,6 @@ SPIRAL explicitly aligns the image-path distribution $p_S$ toward the text-path 
 SPIRAL-OPD samples trajectories from the rendered-image path and evaluates the native-text teacher distribution at the same decoding prefixes. The default objective uses reverse KL:
 
 $$
-
 \mathcal{L}_{\mathrm{OPD}}
 =
 \sum_{t \in \mathcal{Y}}
