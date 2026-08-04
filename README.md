@@ -69,7 +69,7 @@ SPIRAL explicitly aligns the image-path distribution $p_S$ toward the text-path 
 
 SPIRAL-OPD samples trajectories from the rendered-image path and evaluates the native-text teacher distribution at the same decoding prefixes. The default objective uses reverse KL:
 
-$$
+```math
 \mathcal{L}_{\mathrm{OPD}}
 =
 \sum_{t \in \mathcal{Y}}
@@ -79,7 +79,7 @@ p_S(\cdot \mid y_{<t}, r(x,s), q)
 \parallel
 p_T(\cdot \mid y_{<t}, x, q)
 \right).
-$$
+```
 
 This on-policy supervision directly targets states encountered during image-path inference and is particularly effective for precise information retrieval.
 
