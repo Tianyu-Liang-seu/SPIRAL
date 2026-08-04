@@ -75,9 +75,9 @@ SPIRAL-OPD samples trajectories from the rendered-image path and evaluates the n
 \sum_{t \in \mathcal{Y}}
 D_{\mathrm{RKL}}
 \left(
-p_S(\cdot \mid y_{<t}, r(x,s), q)
+p_S(\cdot \mid y_{1:t-1}, r(x,s), q)
 \parallel
-p_T(\cdot \mid y_{<t}, x, q)
+p_T(\cdot \mid y_{1:t-1}, x, q)
 \right).
 ```
 
